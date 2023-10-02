@@ -3,7 +3,7 @@ local FILENAME = '/bamboo.lua'
 local cacheBreak = tostring(math.random(0, 99999))
  
 res, err = http.get('https://raw.githubusercontent.com/AaronW035/TurtleShit/main/Dig-test?token=GHSAT0AAAAAACHDHI2RIOMP46DKUVDW4WFCZI3FR4A' .. cacheBreak)
-// https://raw.githubusercontent.com/AaronW035/TurtleShit/main/Dig-test?token=GHSAT0AAAAAACHDHI2RIOMP46DKUVDW4WFCZI3FR4A
+
 if not res then error(err) end
  
 local code = res.readAll()
